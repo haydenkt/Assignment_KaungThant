@@ -1,0 +1,17 @@
+.background1{
+    position: relative;
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+@media(max-width: 900px){
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center; 
+    }
+}
