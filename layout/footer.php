@@ -12,6 +12,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script>
     $(document).ready(function($) {
         $('.counter').counterUp({
@@ -35,6 +36,42 @@
             $('#modal').hide();
             $('#signup,#nav-Signup-tab').removeClass('active');
         });
+        $('#signupw').click(function(e){
+
+            var valid = this.form.checkValidity();
+
+                if(valid){
+                    var email 	    = $('#email').val();
+                    var username	= $('#username').val();
+                    var password 	= $('#password').val();
+                    var phoneno     = $('#phno').val();
+                    var dob 	    = $('#dob').val();
+                    var post 	    = $('#post').val();
+                    e.preventDefault();	
+                    $.ajax({
+                        type: 'POST',
+                        url: 'db/register.php',
+                        data: {email: email, username: username, password: password, phoneno: phoneno, dob: dob, post: post},
+                        success: function(data){
+                        Swal.fire({
+                                    'title': 'Welcome',
+                                    'text': 'Sign Up Successful!',
+                                    'type': 'success'
+                                    })                        
+                        },
+                        error: function(data){
+                            Swal.fire({
+                                    'title': 'Errors',
+                                    'text': 'There were errors while saving the data.',
+                                    'type': 'error'
+                                    })
+                        }
+                    });     
+                }
+                else{  
+
+                }
+        });		
     });
 </script>
 </html>

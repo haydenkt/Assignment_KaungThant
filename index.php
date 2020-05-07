@@ -1,4 +1,5 @@
 <?php include('layout/header.php') ?>
+<?php require('db/dbconfig.php')?>
 <section class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="index.php">Airpollution</a>
@@ -40,54 +41,52 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade p-5 show" id="login" role="tabpanel" aria-labelledby="nav-Login-tab">
                             <div>
-                            <form method="post">
-                                <h2>Login</h2>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control w-75" id="exampleInputPassword1">
-                                </div>
-                                <button type="submit" class="btn btn-outline-success">Login</button>
-                                <button type="buttonm" class="btn btn-secondary" id="hide">Cancel</button>
-                            </form>
+                                <form method="post">
+                                    <h2>Login</h2>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control w-75" id="exampleInputPassword1">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-success">Login</button>
+                                    <button type="buttonm" class="btn btn-secondary" id="hide">Cancel</button>
+                                </form>
                             </div>
                         </div>
                         <div class="tab-pane p-5 fade" id="signup" role="tabpanel" aria-labelledby="nav-Signup-tab">
-                        <div>
-                            <form method="post">
-                                <h2>Signup</h2>
-                                <div class="form-group">
-                                    <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control w-75" id="exampleInputEmail1" placeholder="Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control w-75" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">Female</label>
+                            <div>
+                                <form action="db/register.php" method="post">
+                                    <h2>Signup</h2>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control w-75" id="email" aria-describedby="emailHelp" placeholder="E-mail">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Male</label>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control w-75" id="username" placeholder="Name">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control w-75" id="exampleInputEmail1" placeholder="Ph-number">
-                                </div>
-                                <div class="form-group">
-                                    <input type="date" class="form-control w-75" id="exampleInputEmail1" placeholder="Ph-number">
-                                </div>
-                                </div>
-                                <button type="submit" class="btn btn-outline-success">Signup</button>
-                                <button type="button" class="btn btn-secondary" id="hide1">Cancel</button>
-                            </form>
+
+                                    <div class="form-group">
+                                        <input type="password" class="form-control w-75" id="password" placeholder="Password">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control w-75" id="phno" placeholder="Ph-number">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="date" class="form-control w-75" id="dob">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="int" class="form-control w-75" id="post" placeholder="postal code">
+                                    </div>
+
+                                    <button type="submit" id="signupw" class="btn btn-outline-success">Sign up</button>
+                                    <button type="button" class="btn btn-secondary" id="hide1">Cancel</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -97,6 +96,7 @@
     </div>
     </nav>
 </section>
+
 <section>
     <div class="container-fluid">
         <div class="row">
