@@ -1,5 +1,4 @@
 <?php include('layout/header.php') ?>
-<?php require('db/dbconfig.php')?>
 <section class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="index.php">Airpollution</a>
@@ -58,35 +57,30 @@
                         </div>
                         <div class="tab-pane p-5 fade" id="signup" role="tabpanel" aria-labelledby="nav-Signup-tab">
                             <div>
-                                <form action="db/register.php" method="post">
-                                    <h2>Signup</h2>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control w-75" id="email" aria-describedby="emailHelp" placeholder="E-mail">
-                                    </div>
+                            <form action="db/insert.php" method="post">
+                                <h2>Signup</h2>
+                                <label for="username"><b>Username</b></label>
+                                <input class="form-control" id="username" type="text" name="username" required>
 
-                                    <div class="form-group">
-                                        <input type="text" class="form-control w-75" id="username" placeholder="Name">
-                                    </div>
+                                <label for="password"><b>Password</b></label>
+                                <input class="form-control" id="password"  type="password" name="password" required>
 
-                                    <div class="form-group">
-                                        <input type="password" class="form-control w-75" id="password" placeholder="Password">
-                                    </div>
+                                <label for="phonenumber"><b>Phone number</b></label>
+                                <input class="form-control" id="phoneumber"  type="text" name="phonenumber" required>
 
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control w-75" id="phno" placeholder="Ph-number">
-                                    </div>
+                                <label for="dateofbirth"><b>Date of Birth</b></label>
+                                <input class="form-control" id="dateofbirth"  type="text" name="dateofbirth" required>
 
-                                    <div class="form-group">
-                                        <input type="date" class="form-control w-75" id="dob">
-                                    </div>
+                                <label for="email"><b>Email</b></label>
+                                <input class="form-control" id="eamil"  type="email" name="email" required>
 
-                                    <div class="form-group">
-                                        <input type="int" class="form-control w-75" id="post" placeholder="postal code">
-                                    </div>
+                                <label for="postal"><b>Postal code</b></label>
+                                <input class="form-control" id="postal"  type="int" name="postal" required>
 
-                                    <button type="submit" id="signupw" class="btn btn-outline-success">Sign up</button>
-                                    <button type="button" class="btn btn-secondary" id="hide1">Cancel</button>
-                                </form>
+                                <br>
+                                <input class="btn btn-outline-success" type="submit" id="register" name="create" value="Sign Up">
+                                <button type="buttonm" class="btn btn-secondary" id="hide1">Cancel</button>
+                            </form>
                             </div>
                         </div>
                     </div>

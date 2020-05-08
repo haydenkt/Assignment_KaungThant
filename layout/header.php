@@ -1,3 +1,6 @@
+<?php
+require_once('db/dbconfig.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -36,22 +36,22 @@
             $('#modal').hide();
             $('#signup,#nav-Signup-tab').removeClass('active');
         });
-        $('#signupw').click(function(e){
+        $('#register').click(function(e){
 
             var valid = this.form.checkValidity();
 
                 if(valid){
-                    var email 	    = $('#email').val();
-                    var username	= $('#username').val();
-                    var password 	= $('#password').val();
-                    var phoneno     = $('#phno').val();
-                    var dob 	    = $('#dob').val();
-                    var post 	    = $('#post').val();
+                    var username	= $('username').val();
+                    var password 	= $('password').val();
+                    var phonenumber = $('phonenumber').val();
+                    var dob 	    = $('dateofbirth').val();
+                    var email 	    = $('email').val();
+                    var post 	    = $('postal').val();
                     e.preventDefault();	
                     $.ajax({
                         type: 'POST',
-                        url: 'db/register.php',
-                        data: {email: email, username: username, password: password, phoneno: phoneno, dob: dob, post: post},
+                        url: 'db/inset.php',
+                        data: {username: username, password: password,phonenumber: phonenumber, dob: dateofbirth, email: email, post: postal},
                         success: function(data){
                         Swal.fire({
                                     'title': 'Welcome',
