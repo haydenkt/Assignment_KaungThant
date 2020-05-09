@@ -209,7 +209,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-12 p-3">
                         <div class="card h-100">
-                            <img src="images/plant.jpg" class="card-img-top h-50" alt="Plant">
+                            <img src="images/plant1.jpg" class="card-img-top" alt="Plant">
                             <div class="card-body">
                                 <h5>On the Environment</h5>
                                 <p class="card-text">Air pollution has a major impact on the process of plant evolution by preventing photosynthesis in many cases, with serious consequences for the purification of the air we breathe. It also contributes to the formation of acid rain, atmospheric precipitations in the form of rain, frost, snow or fog, which are released during the combustion of fossil fuels and transformed by contact with water steam in the atmosphere.</p>
@@ -218,7 +218,7 @@
                     </div>
                     <div class="col-md-4 col-sm-12 p-3">
                         <div class="card h-100">
-                            <img src="images/ice.jpg" class="card-img-top h-50" alt="Ice Berg">
+                            <img src="images/ice.jpg" class="card-img-top" alt="Ice Berg">
                             <div class="card-body">
                                 <h5>Global Warming</h5>
                                 <p class="card-text">On top of that, air pollution is a major contributor to global warming and climate change. In fact, the abundance of carbon dioxide in the air is one of the causes of the greenhouse effect. Normally, the presence of greenhouse gases should be beneficial for the planet because they absorb the infra-red radiation produced by the surface of the earth. But the excessive concentration of these gases in the atmosphere is the cause of the recent climate change.</p>
@@ -227,7 +227,7 @@
                     </div>
                     <div class="col-md-4 col-sm-12 p-3">
                         <div class="card h-100">
-                            <img src="images/mask.jpg" class="card-img-top h-50" alt="Gas Mask">
+                            <img src="images/mask1.jpg" class="card-img-top" alt="Gas Mask">
                             <div class="card-body">
                                 <h5>On Human Health</h5>
                                 <p class="card-text">Our continual exposure to air pollutants is responsible for the deterioration of human health. Air pollution is indeed a significant risk factor for human health conditions, causing allergies, respiratory and cardiovascular diseases as well as lung damage.</p>
