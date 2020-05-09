@@ -1,0 +1,5 @@
+fullname - string(255)
+email - string (255)
+dob - string(255)address - text
+postalcode - string
+password - string

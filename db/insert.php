@@ -6,15 +6,14 @@ require_once('dbconfig.php');
 if(isset($_POST)){
 
 	$username 		= $_POST['username'];
-	$password 		= $_POST['password'];
+	$password 		= md5($_POST['password']);
 	$phonenumber 	= $_POST['phonenumber'];
-	$dateofbirth	= $_POST['dateofbirth'];
-    $postal         = $_POST['postal'];
+	$dateofbirth	= $_POST['dob'];
+    $post           = $_POST['post'];
     $email 		    = $_POST['email'];
-
 		$sql = "INSERT INTO users (uname, upassword, user_phno, user_dob, postal_code, email) VALUES(?,?,?,?,?,?)";
 		$stmtinsert = $db->prepare($sql);
-		$result = $stmtinsert->execute([$username, $password, $phonenumber, $dateofbirth, $postal, $email]);
+		$result = $stmtinsert->execute([$username, $password, $phonenumber, $dateofbirth, $post, $email]);
 		if($result){
 			echo 'Successfully saved.';
 		}else{

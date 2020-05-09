@@ -1,11 +1,5 @@
 <div class="footer"></div>
 </body>
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
-
 <script src="js/jquery-3.4.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -41,17 +35,17 @@
             var valid = this.form.checkValidity();
 
                 if(valid){
-                    var username	= $('username').val();
-                    var password 	= $('password').val();
-                    var phonenumber = $('phonenumber').val();
-                    var dob 	    = $('dateofbirth').val();
-                    var email 	    = $('email').val();
-                    var post 	    = $('postal').val();
+                    var username	= $('#username').val();
+                    var password 	= $('#password').val();
+                    var phonenumber = $('#phonenumber').val();
+                    var dob 	    = $('#dateofbirth').val();
+                    var post 	    = $('#postal').val();
+                    var email 	    = $('#email').val();
                     e.preventDefault();	
                     $.ajax({
                         type: 'POST',
-                        url: 'db/inset.php',
-                        data: {username: username, password: password,phonenumber: phonenumber, dob: dateofbirth, email: email, post: postal},
+                        url: 'db/insert.php',
+                        data: {username: username, password: password,phonenumber: phonenumber, dob: dob, post: post, email: email},
                         success: function(data){
                         Swal.fire({
                                     'title': 'Welcome',

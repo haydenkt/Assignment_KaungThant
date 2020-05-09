@@ -1,0 +1,5 @@
+title - string (255)
+content - text
+image - string (255)
+publish - int(11)
+user_id - int (11)
