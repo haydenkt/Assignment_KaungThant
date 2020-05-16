@@ -13,7 +13,7 @@ require_once('db/dbconfig.php');
     <script src="https://kit.fontawesome.com/1bd71a138c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dark">
 <section class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
         <a class="font" href="index.php">Airpollution</a>
@@ -58,16 +58,17 @@ require_once('db/dbconfig.php');
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade p-5 show" id="login" role="tabpanel" aria-labelledby="nav-Login-tab">
                             <div>
-                                <form action="db/login.php" method="post">
+                                <form action="login.php" method="post">
                                     <h2>Login</h2>
-                                    <div class="form-group">
+                                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                                         <label for="username">Username</label>
-                                        <input type="text" class="form-control w-75" name="username" id="logusername">
-                                        <span class="help-block">
+                                        <input type="text" class="form-control w-75" name="username" required>
+                                        <span class="help-block"><?php echo (!empty($username_err)) ?$username_err:''; ?>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                                         <label for="password">Password</label>
-                                        <input type="password" class="form-control w-75" name="password" id="logpassword">
+                                        <input type="password" class="form-control w-75" name="password" required>
+                                        <span class="help-block"><?php echo (!empty($password_err))?$password_err:""; ?></span>
                                     </div>
                                     <button type="submit" class="btn btn-outline-success" id="loginw">Login</button>
                                     <button type="button" class="btn btn-secondary" id="hide">Cancel</button>

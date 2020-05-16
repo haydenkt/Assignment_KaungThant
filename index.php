@@ -23,7 +23,7 @@
     </div>
 </section>
 <section class="container-fluid">
-    <div class="bg-dark">
+    <div class="bg-light rounded-bottom">
         <div class="row">
             <div class="col-md-12 text-center col-sm-12">
                 <div class="row p-5">
@@ -52,6 +52,7 @@
         </div>
     </div>
 </section>
+<hr class="w-75 bg-danger p-1 rounded-pill">
 <section id="About" class="container-fluid">
     <div class="container-fluid bg-dark">
         <div class="row p-5">
@@ -73,71 +74,77 @@
         </div>
     </div>
 </section>
+<hr class="w-75 bg-primary p-1 rounded-pill">
 <section id="Definition" class="container-fluid">
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-light rounded">
+    <h1 class="mb-0 text-center">Definition</h1>
         <div class="row">
             <div class="col-md-12">
                 <div class="row p-5">
                     <div class="col-md-6 col-sm-12">
-                        <img src="images/4.jpg" alt="Nuclear power plant" class="img-fluid">
-                    </div>
-                    <div class="col-md-6 text-white col-sm-12">
                         <div class="w-75">
                         <h4>Pollution?</h4>
                             <p>Air pollution can be defined as an alteration of air quality that can be characterized by measurements of chemical, biological or physical pollutants in the air. Therefore, air pollution means the undesirable presence of impurities or the abnormal rise in the proportion of some constituents of the atmosphere. It can be classified in 2 sections: visible and invisible air pollution.</p>
                         </div>
                     </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img src="images/4.jpg" alt="Nuclear power plant" class="img-fluid rounded">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>        
+</section>     
+<hr class="w-75 bg-success p-1 rounded-pill">   
 <section id="Cause" class="container-fluid">
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid rounded">
+    <h1 class="mb-0 text-white text-center">Causes</h1>
         <div class="row">
             <div class="col-md-12">
                 <div class="row p-5">
+                    <div class="col-md-6 col-sm-12">
+                        <img src="images/5.jpg" alt="Causes of airpollution." width="633" class="img-fluid rounded">
+                    </div>
                     <div class="col-md-6 text-white col-sm-12">
                         <div class="w-75">
                             <h4>Air Pollution <br> Causes</h4>
                             <p>Air pollution is caused by the presence in the atmosphere of toxic substances, mainly produced by human activities, even though sometimes it can result from natural phenomena such as volcanic eruptions, dust storms and wildfires, also depleting the air quality.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
-                        <img src="images/5.jpg" alt="Causes of airpollution." width="633" class="img-fluid">
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>        
+</section>    
+<hr class="w-75 bg-warning p-1 rounded-pill">    
 <section id="Effect" class="container-fluid">
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-light rounded">
+        <h1 class="mb-0 text-center">Effects</h1>
         <div class="row">
-            <div class="col-md-12 mt-4">
+            <div class="col-md-12 mt-1">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 p-3">
-                        <div class="card h-100">
-                            <img src="images/plant1.jpg" class="card-img-top" alt="Plant">
-                            <div class="card-body">
+                        <div class="card bg-secondary h-100">
+                            <img src="images/plant1.jpg" class="card-img-top rounded" alt="Plant">
+                            <div class="card-body text-white">
                                 <h5>On the Environment</h5>
                                 <p class="card-text">Air pollution has a major impact on the process of plant evolution by preventing photosynthesis in many cases, with serious consequences for the purification of the air we breathe. It also contributes to the formation of acid rain, atmospheric precipitations in the form of rain, frost, snow or fog, which are released during the combustion of fossil fuels and transformed by contact with water steam in the atmosphere.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 p-3">
-                        <div class="card h-100">
-                            <img src="images/ice.jpg" class="card-img-top" alt="Ice Berg">
-                            <div class="card-body">
+                        <div class="card bg-secondary h-100">
+                            <img src="images/ice.jpg" class="card-img-top rounded" alt="Ice Berg">
+                            <div class="card-body text-white">
                                 <h5>Global Warming</h5>
                                 <p class="card-text">On top of that, air pollution is a major contributor to global warming and climate change. In fact, the abundance of carbon dioxide in the air is one of the causes of the greenhouse effect. Normally, the presence of greenhouse gases should be beneficial for the planet because they absorb the infra-red radiation produced by the surface of the earth. But the excessive concentration of these gases in the atmosphere is the cause of the recent climate change.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 p-3">
-                        <div class="card h-100">
-                            <img src="images/mask1.jpg" class="card-img-top" alt="Gas Mask">
-                            <div class="card-body">
+                        <div class="card bg-secondary h-100">
+                            <img src="images/mask1.jpg" class="card-img-top rounded" alt="Gas Mask">
+                            <div class="card-body text-white">
                                 <h5>On Human Health</h5>
                                 <p class="card-text">Our continual exposure to air pollutants is responsible for the deterioration of human health. Air pollution is indeed a significant risk factor for human health conditions, causing allergies, respiratory and cardiovascular diseases as well as lung damage.</p>
                             </div>
@@ -148,25 +155,27 @@
         </div>
     </div>
 </section>  
+<hr class="w-75 bg-danger p-1 rounded-pill">
 <section class="container-fluid">
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-light rounded">
         <div class="row">
-            <div class="col-md-12 mb-3">
-                <h3 class="text-center text-white">You can Learn more Information Here!</h3>
+            <div class="col-md-12 mb-3 p-3">
+                <h3 class="text-center mt-3">You can Learn more Information Here!</h3>
                 <div class="row">
-                    <div class="col-md-6">
-                        <a href="https://www.pachamama.org/" target="blank"><img src="images/Capture.png" class="rounded-pill float-right img-fluid" alt="PNG"></a>
+                    <div class="col-md-6 text-center p-3 col-sm-12">
+                        <a href="https://www.pachamama.org/" target="blank"><img src="images/Capture.png" class="rounded-pill img-fluid border border-dark" alt="PNG"></a>
                     </div>
-                    <div class="col-md-6">
-                        <a href="https://www.epa.gov/p2/learn-about-pollution-prevention" target="blank"><img src="images/Capture2.png" class="rounded-pill img-fluid" alt="PNG"></a>
+                    <div class="col-md-6 text-center p-3 col-sm-12">
+                        <a href="https://www.epa.gov/p2/learn-about-pollution-prevention" target="blank"><img src="images/Capture2.png" class="rounded-pill img-fluid border border-dark" alt="PNG"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<hr class="w-75 bg-primary p-1 rounded-pill">
 <footer class="container-fluid">
-    <div class="container-fluid bg-secondary">
+    <div class="container-fluid bg-secondary rounded-top">
         <div class="row p-5 text-white">
             <div class="col-md-12">
                 <div class="row">
@@ -176,7 +185,6 @@
                             <li><a href="#Definition">Definition</a></li>
                             <li><a href="#Cause">Cause</a></li>
                             <li><a href="#Effect">Effect</a></li>
-                            <li><a href="Blog.php">Blog</a></li>
                         </ul>
                     </div>
                     <div class="col-md-9 col-sm-12">
