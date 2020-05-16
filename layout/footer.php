@@ -65,7 +65,29 @@
                 else{  
 
                 }
-        });		
+        });
+        // $('#loginw').click(function(e){
+        //     var valid = this.form.checkValidity();
+
+        //         if(valid){
+        //             var username = $('#logusername').val();
+        //             var password = $('#logpassword').val();
+        //         }
+        //         e.preventDefault();
+        //         $.ajax({
+        //             type: 'POST',
+        //             url: 'db/login.php',
+        //             data: {username: username,password: password},
+        //             success: function(data){
+        //                 if($.trim(data)=== "1"){
+        //                     setTimeout('window.location.href = "index.php"', 2000);
+        //                 }
+        //             },
+        //             error: function(data){
+        //                 alert('error');
+        //             }
+        //         })
+        // });
     });
 </script>
 </html>

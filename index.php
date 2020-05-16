@@ -1,96 +1,4 @@
 <?php include('layout/header.php') ?>
-<section class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-        <a class="navbar-brand" href="index.php">Airpollution</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-            <ul class="nav">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" href="index.php">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#Definition">Definition</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#Cause">Cause</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white pr-md-5" href="#Effect">Effect</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-success font-weight-bold" id="Login">Login</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-outline-success rounded-pill text-white" id="Signup">Signup</a>
-                </li> 
-            </ul>
-            <div class="modal" id="modal">
-                <div class="modal-dialog">
-                    <div class="modal-content mt-5">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link" id="nav-Login-tab" data-toggle="tab" href="#login" role="tab">Login</a>
-                                <a class="nav-item nav-link" id="nav-Signup-tab" data-toggle="tab" href="#signup" role="tab">Signup</a>
-                            </div>
-                        </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade p-5 show" id="login" role="tabpanel" aria-labelledby="nav-Login-tab">
-                            <div>
-                                <!-- <form method="post">
-                                    <h2>Login</h2>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control w-75" id="exampleInputPassword1">
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-success">Login</button>
-                                    <button type="button" class="btn btn-secondary" id="hide">Cancel</button>
-                                </form> -->
-                            </div>
-                        </div>
-                        <div class="tab-pane p-5 fade" id="signup" role="tabpanel" aria-labelledby="nav-Signup-tab">
-                            <div>
-                            <form action="db/insert.php" method="post">
-                                <h2>Signup</h2>
-                                <label for="username"><b>Username</b></label>
-                                <input class="form-control" id="username" type="text" name="username" required>
-
-                                <label for="password"><b>Password</b></label>
-                                <input class="form-control" id="password"  type="password" name="password" required>
-
-                                <label for="phonenumber"><b>Phone number</b></label>
-                                <input class="form-control" id="phonenumber"  type="text" name="phonenumber" required>
-
-                                <label for="dateofbirth"><b>Date of Birth</b></label>
-                                <input class="form-control" id="dateofbirth"  type="date" name="dateofbirth" required>
-
-                                <label for="email"><b>Email</b></label>
-                                <input class="form-control" id="email"  type="email" name="email" required>
-
-                                <label for="postal"><b>Postal code</b></label>
-                                <input class="form-control" id="postal"  type="int" name="postal" required>
-
-                                <br>
-                                <input class="btn btn-outline-primary" type="submit" id="register" name="create" value="Sign Up">
-                                <button type="button" class="btn btn-secondary" id="hide1">Cancel</button>
-                            </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </nav>
-</section>
-
 <section>
     <div class="container-fluid">
         <div class="row">
@@ -155,9 +63,10 @@
                         <iframe src="https://www.youtube.com/embed/e6rglsLy1Ys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 text-white">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ex quae, error debitis voluptatum doloribus laborum ipsa eveniet soluta similique.</p>
+                    <div class="col-md-6 col-sm-12 text-white p-5">
+                        <h4>About air pollution.</h4>
+                        <p>Air pollution occurs when harmful or excessive quantities of substances are introduced into Earth's atmosphere. Sources of air pollution include gases, particulates, and biological molecules.</p>
+                        <a class="btn btn-outline-warning" href="About.php">Learn More..</a>
                     </div>
                 </div>
             </div>
@@ -239,23 +148,60 @@
         </div>
     </div>
 </section>  
+<section class="container-fluid">
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <h3 class="text-center text-white">You can Learn more Information Here!</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://www.pachamama.org/" target="blank"><img src="images/Capture.png" class="rounded-pill float-right img-fluid" alt="PNG"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://www.epa.gov/p2/learn-about-pollution-prevention" target="blank"><img src="images/Capture2.png" class="rounded-pill img-fluid" alt="PNG"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="container-fluid">
     <div class="container-fluid bg-secondary">
         <div class="row p-5 text-white">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-3 col-sm-12 text-center">
+                        <ul>
                         <h3><b>About</b></h3>
-                        <p>Definition</p>
-                        <p>Causes</p>
-                        <p>Effects</p>
+                            <li><a href="#Definition">Definition</a></li>
+                            <li><a href="#Cause">Cause</a></li>
+                            <li><a href="#Effect">Effect</a></li>
+                            <li><a href="Blog.php">Blog</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-6 col-sm-12 text-center">
-                        <label for="email"><b>Input your E-mail to Login.........</b></label>
-                        <input type="email" name="email" id="email" class="form-control bg-transparent">
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        
+                    <div class="col-md-9 col-sm-12">
+                        <form>
+                            <h3>Contact Us</h3>
+                            <div class="row">
+                                <div class="col">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" name="username" placeholder="Username">
+                            </div>
+                                <div class="col">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" name="email" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <label for="textarea">Leave a message.</label>
+                                    <textarea name="textarea" class="form-control" id="textarea" cols="30" rows="5" placeholder="Go ahead. We are listening..."></textarea>                                
+                                </div>
+                            </div>
+                            <div class="mt-3 float-right">
+                                <button type="button" class="btn btn-light">Send<i class="far fa-paper-plane"></i></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
